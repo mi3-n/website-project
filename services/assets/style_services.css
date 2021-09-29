@@ -182,13 +182,16 @@ header {
 
 footer {
     background-color: #050A30;
-    height: 110px;
+    height: 140px;
+    width: 100%;
 }
 
 .footer-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 95px;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: space-between;
+    height: 100px;
 }
 
 .icons {
@@ -198,15 +201,10 @@ footer {
     cursor: pointer;
 }
 
-.footer-right {
-    float: right;
-    display: flex;
-    align-items: center;
-}
-
 .contact {
     color: #fff;
     text-align: right;
+    margin-right: 20px;
 }
 
 .contact i {
@@ -220,7 +218,7 @@ footer {
 
 .logo-footer {
     width: 80px;
-    margin: calc((110px - 80px) / 2);
+    margin-right: 15px;
 }
 
 .blue-band {
@@ -451,64 +449,82 @@ mobile XL ---> @media (min-width: 426px) and (max-width: 767px) */
     /* footer */
 
     footer {
+        /*  */
+        height: 170px;
+
         background-color: #050A30;
-        height: 110px;
+        width: 100%;
     }
-
+    
     .footer-container {
-        display: flex;
-
+        display: grid;
         /* //* */
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-    }
+        height: 140px;
+        grid-template-columns: 1fr;
 
+        align-items: center;
+    }
+    
     /* //* */
-    .icon-footer {
-        order: 2;
+    .icons-footer {
+        grid-area: 2 / 1 / 3 / 2;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px auto 20px auto;
+        width: 80%;
     }
-
+    
     .icons {
+        /* //* */
         float: left;
+
         list-style: none;
         margin: 0 20px;
         cursor: pointer;
     }
 
-    .footer-right {
+    .icons i {
+        background: linear-gradient(45deg,  #26bcc1 19%,#207cca 50%,#1e5799 75%);
+    
         /* //* */
-        order: 1;
+        font-size: 15px;
+        padding: 7px;
 
-        float: right;
-        display: flex;
-        align-items: center;
-    }
-
-    .contact {
+        border-radius: 50%;
         color: #fff;
-        text-align: right;
-        
-        
     }
+    
+    .contact {
+        /* //* */
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: left;
+        margin: 20px auto 0 auto;
 
+        color: #fff;
+    }
+    
     .contact i {
-        font-size: 1.15rem;
-        margin-right: 5px;
+        /* //* */
+        font-size: 1rem;
+        margin-right: 1px;
     }
-
+    
     .contact p:last-child {
-        float: right;
+        /* //* */
+        float: none;
+        display: inline-block;
     }
-
+    
+        /* //* */
     .logo-footer {
-        width: 80px;
-        margin: calc((110px - 80px) / 2);
+        display: none;
     }
 
     .blue-band {
         background-color: #000057;
-        height: 40px;
+
+        /* //* */
+        height: 30px;
     }
 
 }
