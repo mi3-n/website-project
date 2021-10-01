@@ -599,17 +599,13 @@ mobile XL ---> @media (min-width: 426px) and (max-width: 767px) */
 /* Normal */
 @media (min-width: 769px) and (max-width: 1200px){
 
-    
+    /* wheel */
+    #wheel-list {
+        height: 1100px;
+    }
 
-}
+    #wheel-list::before {
+        height: 1100px;
+    }
 
-@media (min-width: 1201px) and (max-width: 1440px) {
-
-    
-}
-
-
-@media (min-width: 1441px){
-
-    
 }
