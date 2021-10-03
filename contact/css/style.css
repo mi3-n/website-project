@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*contact page------------------------------*/
+.contact-wrap{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+}
+.contact-wrap h1{
+    text-transform: uppercase;
+    color: #000057;
+    font-size: 2rem;
+}
+.contact-wrap p{
+    margin: 20px 0;
+
+}
+.contact-content{
+    margin: 40px auto;
+    border-bottom: 2px solid #000;
+    width: 80%;
+}
+form{
+    margin: 40px auto;
+    width: 60%;
+}
+form label{
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-child{
+    width: 45%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+.form-box{
+    margin-bottom: 2rem;
+}
+.select-box, .message-box, .send-button{
+    text-align: left;
+}
+.select-box select, .message-title{
+    width: 45%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+.message-box textarea{
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+}
+.send-button input{
+    padding: 0.3rem 1.6rem;
+        margin-top: 1.5rem;
+    color: #fff;
+    background-color: #062561;
+    border: solid #062561;
+}
+
+@media (max-width:768px) {
+    .contact-wrap {
+        width: 100%;
+    }
+    form{
+        width: 80%;
+    }
+    .contact-info {
+        display: block;
+    }
+    .contact-child, .select-box select, .message-title {
+        width: 100%;
+    }
+    .message-box textarea{
+        height: 150px;
+    }
+    .send-button{
+        text-align: center;
+    }
+}
