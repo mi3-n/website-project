@@ -11,7 +11,7 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>
+    <header id="bg-contact">
         <nav>
             <div class="navy-band"></div>
             <div class="nav-container">
@@ -31,6 +31,7 @@
     </header>
 
     <main>
+        <div class="bg-wrap">
         <div class="contact-wrap">
             <div class="contact-content">
             <h1>CONTACT US</h1>
@@ -41,17 +42,18 @@
             </div>
             <form>
                 <div class="form-box">
-                <label>YOUR INFORMATION</label>
+                <label for="info">YOUR INFORMATION</label>
                 <div class="contact-info">
-                <input class="contact-child" type="text" name="firstname" placeholder="First Name *" required>
+                <input id="info" class="contact-child" type="text" name="firstname" placeholder="First Name *" required>
                 <input class="contact-child" type="text" name="lastname" placeholder="Last Name *" required>
                 <input class="contact-child" type="text" name="email" placeholder="E-mail *" required>
                 <input class="contact-child" type="text" name="phone" placeholder="Phone *" required>
                     </div>
                 </div>
                 <div class="select-box form-box">
-                    <label>SELECT YOUR LOCATION</label>
-                    <select>
+                    <label for="location">SELECT YOUR LOCATION</label>
+                    <select id="location">
+                        <option></option>
                         <option>Option1</option>
                         <option>Option2</option>
                         <option>Option3</option>
@@ -59,8 +61,9 @@
                     </select>
                 </div>
                 <div class="select-box form-box">
-                    <label>SELECT HOW WE CAN ASSIST YOU</label>
-                    <select>
+                    <label for="reason">SELECT HOW WE CAN ASSIST YOU</label>
+                    <select id="reason">
+                        <option></option>
                         <option>Option1</option>
                         <option>Option2</option>
                         <option>Option3</option>
@@ -68,9 +71,9 @@
                     </select>
                 </div>
                 <div class="message-box">
-                    <label>LEAVE MESSAGE TO US</label>
-                    <input class="message-title" type="text" name="title" placeholder="Message title">
-                    <textarea placeholder="Your message"></textarea>
+                    <label for="mg-title">LEAVE MESSAGE TO US</label>
+                    <input id="mg-title" class="message-title" type="text" name="title" placeholder="Message title">
+                    <textarea name="message" placeholder="Your message"></textarea>
                 </div>
                 <div class="send-button">
                     <input type="submit" name="content" value="SEND">
@@ -78,7 +81,7 @@
             </form>
 
         </div>
-
+        </div>
     </main>
 
     <footer>
