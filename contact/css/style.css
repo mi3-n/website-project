@@ -9,6 +9,23 @@ header#bg-contact{
     background: url(../images/bg-contact.jpg) no-repeat center center/cover;
     height: 500px;
 }
+.bg-wrap{
+    position: relative;
+}
+.bg-wrap::before{
+    background-image: url(../images/bottom-bg.jpg);
+    position: absolute;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 150% 40%;
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    opacity: 0.3;
+    right: 0;
+    bottom: 0;
+}
 .contact-wrap{
     width: 80%;
     text-align: center;
@@ -32,8 +49,11 @@ header#bg-contact{
     width: 80%;
 }
 form{
-    margin: 40px auto;
+    margin: 40px auto 0;
     width: 60%;
+    padding-bottom: 4rem;
+    z-index: 40;
+    position: relative;
 }
 form label{
     display: block;
@@ -68,7 +88,7 @@ form label{
 .message-box textarea{
     display: block;
     width: 100%;
-    height: 300px;
+    height: 350px;
     margin-top: 1rem;
     background-color: #efefef;
     border: none;
